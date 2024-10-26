@@ -1,0 +1,31 @@
+Index.html
+  <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحويل النص إلى صوت وصورة وفيديو</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+
+    <h1 class="text-center">تطبيق تحويل النص</h1>
+
+    <div class="mb-3">
+        <label for="text-input" class="form-label">أدخل النص:</label>
+        <textarea id="text-input" class="form-control" rows="4" placeholder="أدخل النص هنا"></textarea>
+    </div>
+
+    <div class="text-center">
+        <button id="text-to-speech" class="btn btn-primary m-2">تحويل إلى صوت</button>
+        <button id="text-to-image" class="btn btn-secondary m-2">تحويل إلى صورة</button>
+    </div>
+
+    <div class="text-center mt-4" id="output">
+        <!-- سيتم عرض النتائج هنا -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
